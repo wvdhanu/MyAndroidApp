@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My App</string>
+    <string name="mobile_challenges_list">
+    1. Limitation of Screen Size\n\n
+    2. Security and Privacy Issues\n\n
+    3. Battery and Performance Optimization\n\n
+    4. Network and Connectivity Issues\n\n
+    5. Limitation in Processing and Storage capacity
+    </string>
+</resources>
