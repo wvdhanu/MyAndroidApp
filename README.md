@@ -13,4 +13,8 @@ A button labeled "Main Activity" is included in the second activity to naviagte 
 This App was successfully installed on a "Samsung Galaxy Note 10 Plus" smart phone with Android Version 12. 
 
 ## Installation
-1. Clone this repository: 
+1. Clone this repository: https://github.com/wvdhanu/MyAndroidApp.git
+2. Open in Android Studio and build the project.
+
+## License
+This project has no License.
