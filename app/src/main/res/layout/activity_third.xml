@@ -12,9 +12,9 @@
     <Button
         android:id="@+id/btnCaptureImage"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:text="Capture Image"
-        android:textSize="16sp"
+        android:textSize="12pt"
         android:backgroundTint="#FF5722"
         android:textColor="#FFFFFF"
         app:layout_constraintTop_toTopOf="parent"
