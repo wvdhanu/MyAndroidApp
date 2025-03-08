@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnExplicit = findViewById(R.id.btnExplicit);
         Button btnImplicit = findViewById(R.id.btnImplicit);
+        Button btnImage = findViewById(R.id.btnImage);
 
         // Explicit Intent - Directly starts SecondActivity
         btnExplicit.setOnClickListener(v -> {
@@ -25,6 +26,12 @@ public class MainActivity extends AppCompatActivity {
         btnImplicit.setOnClickListener(v -> {
             Intent intent = new Intent();
             intent.setAction("com.example.myapp.SECOND_ACTIVITY");
+            startActivity(intent);
+        });
+
+        // Explicit Intent - Directly starts ThirddActivity
+        btnImage.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
             startActivity(intent);
         });
     }

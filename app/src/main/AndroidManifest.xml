@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Camera Permission -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!-- Declare Camera as an Optional Feature to Avoid Warning -->
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -33,6 +39,11 @@
                 <action android:name="com.example.myapp.SECOND_ACTIVITY" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ThirdActivity"
+            android:exported="true">
         </activity>
     </application>
 
