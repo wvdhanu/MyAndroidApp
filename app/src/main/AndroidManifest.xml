@@ -4,9 +4,14 @@
 
     <!-- Camera Permission -->
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.example.myapp.MSE412" />
 
     <!-- Declare Camera as an Optional Feature to Avoid Warning -->
     <uses-feature android:name="android.hardware.camera" android:required="false"/>
+
+    <permission
+        android:name="com.example.myapp.MSE412"
+        android:protectionLevel="dangerous" />
 
     <application
         android:allowBackup="true"
@@ -34,7 +39,8 @@
         </activity>
 
         <activity android:name=".SecondActivity"
-            android:exported="true">
+            android:exported="true"
+            android:permission="com.example.myapp.MSE412">
             <intent-filter>
                 <action android:name="com.example.myapp.SECOND_ACTIVITY" />
                 <category android:name="android.intent.category.DEFAULT" />
