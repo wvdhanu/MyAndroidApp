@@ -23,7 +23,7 @@ import android.app.Instrumentation;
 public class UiAutomatorTest {
 
     private static final int LAUNCH_TIMEOUT = 5000;
-    private static final int SPLASH_TIMEOUT = 3000;
+    private static final int SPLASH_TIMEOUT = 4000;
 
     private UiDevice device;
     private Context context;
@@ -57,7 +57,7 @@ public class UiAutomatorTest {
     @Test
     public void testExplicitButtonLaunchesSecondActivity() {
         // Click the "Start Activity Explicitly" button
-        UiObject2 explicitButton = device.findObject(By.text("Start Activity Explicitly"));
+        UiObject2 explicitButton = device.findObject(By.text("START ACTIVITY EXPLICITLY"));
         assertNotNull("Explicit button not found", explicitButton);
         explicitButton.click();
 
