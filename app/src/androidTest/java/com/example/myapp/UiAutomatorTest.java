@@ -64,7 +64,7 @@ public class UiAutomatorTest {
         // Wait for second activity to appear and check for a challenge text
         device.wait(Until.hasObject(By.pkg(packageName).depth(0)), LAUNCH_TIMEOUT);
 
-        // Replace with one of your actual challenge texts
+        // Look for "Security and Privacy Issues" in second activity
         UiObject2 challengeText = device.findObject(By.textContains("Security and Privacy Issues"));
         assertNotNull("Challenge text not found in second activity", challengeText);
     }
